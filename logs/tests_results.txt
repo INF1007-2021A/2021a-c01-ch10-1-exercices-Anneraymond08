@@ -1,0 +1,26 @@
+test_closest (__main__.TestExercice) ... FAIL
+test_coordinates (__main__.TestExercice) ... ERROR
+test_linear_values (__main__.TestExercice) ... ok
+
+======================================================================
+ERROR: test_coordinates (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 26, in test_coordinates
+    output = exercice.coordinate_conversion(cartesian_coordinates)
+  File "/home/runner/work/2021a-c01-ch10-1-exercices-Anneraymond08/2021a-c01-ch10-1-exercices-Anneraymond08/exercice.py", line 23, in coordinate_conversion
+    r = np.sqrt(x**2+y**2)
+TypeError: unsupported operand type(s) for ** or pow(): 'list' and 'int'
+
+======================================================================
+FAIL: test_closest (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 42, in test_closest
+    self.assertEqual(
+AssertionError: 0 != 3 : Erreur dans le remplacement de caractère
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.001s
+
+FAILED (failures=1, errors=1)
